@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+h1{
+  font-family: 'Spartan' , sans-serif;
+}
+:root {
+  --primary-soft: hsl(333, 80%, 67%);
+  --primary-dark: hsl(300, 43%, 22%);
+  --neutral-light: hsl(300, 24%, 96%);
+  --neutral-dark: hsl(303, 10%, 53%);
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  height: 100vh;
+  display: flex;
+}
+
+/* Background images */
+.bg-mobile {
+  display: none;
+}
+
+.bg-pattern-top-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-pattern-bottom-desktop {
+  position: absolute;
+  right: 0;
+  bottom: -160px;
+  z-index: -1;
+}
+
+.main-container {
+  max-width: var(--desktop-width);
+  margin: auto;
+  padding: 30px;
+  overflow: auto;
+}
+
+/* Header */
+.main-header {
+  max-width: 500px;
+}
+
+h1 {
+  color: var(--primary-dark);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.lead-paragraph {
+   color: var(--neutral-dark);
+}
+
+/* Ratings */
+.ratings div {
+  display: flex;
+  align-items: center;
+  background-color: var(--neutral-light);
+  padding: 15px 15px 15px 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  border-radius: 10px;
+}
+
+.ratings div:nth-child(1) { margin-right: 100px; }
+.ratings div:nth-child(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.ratings div:nth-child(3) { margin-left: 100px; }
+
+.ratings__stars {
+  display: flex;
+  margin-right: 25px;
+}
+
+.star {
+  margin-right: 7px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 80px; */
+}
+
+/* Testimonials */
+.testimonials-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.testimonial-card:nth-child(2) { margin-top: 20px; }
+.testimonial-card:nth-child(3) { margin-top: 40px; }
+
+.testimonial-card {
+  background-color: var(--primary-dark);
+  color: hsl(0, 0%, 100%);
+  padding: 23px;
+  border-radius: 9px;
+  width: 32%;
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-card__customer-picture {
+  border-radius: 50%;
+}
+
+.testimonial-card__info {
+  margin-left: 10px;
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+}
+
+.testimonial-card__verified-buyer-tag {
+  color: var(--primary-soft);
+}
